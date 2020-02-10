@@ -1,29 +1,29 @@
 {
-	"name": "personalcapital-js",
-	"version": "2.1.0",
-	"description": "NodeJS API wrapper for the private Personal Capital API",
-	"main": "personalcapital/personalcapital.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/JamaicanMoose/personalcapital-js.git"
-	},
-	"keywords": [
-		"personal capital",
-		"personalcapital",
-		"api",
-		"mint"
-	],
-	"author": "John Collins",
-	"license": "MIT",
-	"homepage": "https://github.com/JamaicanMoose/personalcapital-js",
-	"dependencies": {
-		"enumify": "^1.0.4",
-		"node-telegram-bot-api": "^0.40.0",
-		"readline-promise": "^1.0.4",
-		"request": "^2.88.0",
-		"request-promise-native": "^1.0.7"
-	},
-	"devDependencies": {
-		"tough-cookie-file-store": "^1.2.0"
-	}
+  "name": "personalcapital-js-telegram",
+  "version": "2.1.0",
+  "description": "NodeJS API wrapper for the private Personal Capital API with support for entering 2fa code via telegram chat bot",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarterMcAlister/personalcapital-js.git"
+  },
+  "keywords": [
+    "personal capital",
+    "personalcapital",
+    "api",
+    "mint"
+  ],
+  "author": "John Collins & Carter McAlister",
+  "license": "MIT",
+  "homepage": "https://github.com/CarterMcAlister/personalcapital-js",
+  "dependencies": {
+    "enumify": "^1.0.4",
+    "node-telegram-bot-api": "^0.40.0",
+    "readline-promise": "^1.0.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "tough-cookie-file-store": "^1.2.0"
+  }
 }
