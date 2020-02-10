@@ -18,6 +18,7 @@
 	"homepage": "https://github.com/JamaicanMoose/personalcapital-js",
 	"dependencies": {
 		"enumify": "^1.0.4",
+		"node-telegram-bot-api": "^0.40.0",
 		"readline-promise": "^1.0.4",
 		"request": "^2.88.0",
 		"request-promise-native": "^1.0.7"
