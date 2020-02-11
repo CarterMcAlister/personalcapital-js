@@ -15,7 +15,7 @@ class PcTelegramBot {
   }
 
   send2FaPrompt() {
-    this.bot.sendMessage(this.hatId, 'Enter Personal Capital 2FA code:')
+    this.bot.sendMessage(this.chatId, 'Enter Personal Capital 2FA code:')
   }
 }
 
