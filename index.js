@@ -197,7 +197,8 @@ class PersonalCapital {
   async __getTempCsrf__() {
     let res = await this.__request__.get({ uri: '/' })
     let match = res.match(/globals.csrf='([a-f0-9-]+)'/)
-    this.__csrf__ = match === null ? fs.readFileSync('pc-csrf.json') : match[1]
+    this.__csrf__ =
+      match === null ? fs.readFileSync('/tmp/pc-csrf.json') : match[1]
     return
   }
 
@@ -210,7 +211,7 @@ class PersonalCapital {
     let resHeader = JSON.parse(res).spHeader
     if ('csrf' in resHeader) {
       this.__csrf__ = resHeader.csrf
-      fs.writeFileSync('pc-csrf.json', this.__csrf__)
+      fs.writeFileSync('/tmp/pc-csrf.json', this.__csrf__)
     }
     this.__auth_level__ = AuthLevel.enumValueOf(resHeader.authLevel)
     return
